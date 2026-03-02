@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programs | Swamy Vivekananda Seva Samsthe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.7rem;">
+                    <img src="assets/images/Logo.png" alt="Swamy Vivekananda Seva Samsthe Logo" class="logo-image">
+                    <div>
+                        <div class="logo-text-title" data-i18n="logo-title">Swamy Vivekananda Seva Samsthe</div>
+                        <div class="logo-text-sub" data-i18n="logo-sub">Serving humanity is worshipping the Divine</div>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav-about">About</a>
+
+                <div class="nav-dropdown">
+                    <span class="dropdown-trigger">
+                        <span data-i18n="nav-programs">Programs</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="programs.html" data-i18n="nav-programs">Programs</a>
+                        <a href="impact.html" data-i18n="nav-impact">Impact</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" data-i18n="nav-contact">Contact</a>
+
+                <div class="nav-controls">
+                    <button class="btn-icon" id="darkModeIcon" onclick="toggleDarkMode()"
+                        title="Toggle Dark/Light Mode">🌙</button>
+                    <button class="nav-cta" id="langToggleBtn" onclick="toggleLanguage()">ಕನ್ನಡ</button>
+                </div>
+            </nav>
+
+            <div class="nav-toggle" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-inner">
+                <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav-about">About</a>
+                <a href="programs.html" onclick="closeMobileMenu()" data-i18n="nav-programs">Programs</a>
+                <a href="impact.html" onclick="closeMobileMenu()" data-i18n="nav-impact">Impact</a>
+                <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav-contact">Contact</a>
+                <a href="javascript:void(0)" onclick="toggleDarkMode()">Toggle Theme</a>
+                <a href="javascript:void(0)" onclick="toggleLanguage()">Change Language</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROGRAMS -->
+    <section class="section reveal">
+        <div class="section-header">
+            <div class="section-kicker" data-i18n="prog-kicker">What We Do</div>
+            <h2 class="section-title" data-i18n="prog-title">Regular Programs &amp; Initiatives</h2>
+            <p class="section-subtitle" data-i18n="prog-subtitle">
+                Our structured programs are designed to address the root causes of educational and social inequality.
+            </p>
+        </div>
+
+        <div class="programs-grid">
+            <article class="program-card">
+                <div class="program-tag" data-i18n="prog-1-tag">Education</div>
+                <div class="program-title" data-i18n="prog-1-title">Evening Tuition Centers</div>
+                <p class="program-text" data-i18n="prog-1-text">
+                    Daily after-school support for children from nearby government schools. Volunteers help
+                    with homework, basic concepts and English reading practice.
+                </p>
+                <div class="program-meta">
+                    <span class="program-chip" data-i18n="prog-1-meta-1">Classes: 1st–10th</span>
+                    <span data-i18n="prog-1-meta-2">5 centers active</span>
+                </div>
+            </article>
+
+            <article class="program-card">
+                <div class="program-tag" data-i18n="prog-2-tag">Health</div>
+                <div class="program-title" data-i18n="prog-2-title">Monthly Health Camps</div>
+                <p class="program-text" data-i18n="prog-2-text">
+                    Free consultation by doctors, basic medicines, BP &amp; sugar checkups, eye testing and
+                    awareness sessions on nutrition and hygiene.
+                </p>
+                <div class="program-meta">
+                    <span class="program-chip" data-i18n="prog-2-meta-1">Open to all</span>
+                    <span data-i18n="prog-2-meta-2">Every 2nd Sunday</span>
+                </div>
+            </article>
+
+            <article class="program-card">
+                <div class="program-tag" data-i18n="prog-3-tag">Youth</div>
+                <div class="program-title" data-i18n="prog-3-title">Vivekananda Youth Circle</div>
+                <p class="program-text" data-i18n="prog-3-text">
+                    Weekly gatherings for students to discuss values, leadership, time management and
+                    career guidance inspired by the life of Swamy Vivekananda.
+                </p>
+                <div class="program-meta">
+                    <span class="program-chip" data-i18n="prog-3-meta-1">Weekend meet</span>
+                    <span data-i18n="prog-3-meta-2">50+ members</span>
+                </div>
+            </article>
+
+            <article class="program-card">
+                <div class="program-tag" data-i18n="prog-4-tag">Livelihood</div>
+                <div class="program-title" data-i18n="prog-4-title">Skill Training for Women</div>
+                <p class="program-text" data-i18n="prog-4-text">
+                    Tailoring, eco-friendly bag making and basic computer skills to support women who wish
+                    to contribute to the family income.
+                </p>
+                <div class="program-meta">
+                    <span class="program-chip" data-i18n="prog-4-meta-1">Batch: 3 months</span>
+                    <span data-i18n="prog-4-meta-2">Certificates given</span>
+                </div>
+            </article>
+
+            <article class="program-card">
+                <div class="program-tag" data-i18n="prog-5-tag">Environment</div>
+                <div class="program-title" data-i18n="prog-5-title">Green Neighborhood Drive</div>
+                <p class="program-text" data-i18n="prog-5-text">
+                    Tree plantation, cleanliness campaigns and awareness talks on waste segregation,
+                    plastic-free events and water conservation.
+                </p>
+                <div class="program-meta">
+                    <span class="program-chip" data-i18n="prog-5-meta-1">Community action</span>
+                    <span data-i18n="prog-5-meta-2">Students involved</span>
+                </div>
+            </article>
+
+            <article class="program-card">
+                <div class="program-tag" data-i18n="prog-6-tag">Special</div>
+                <div class="program-title" data-i18n="prog-6-title">Festive Seva &amp; Food Distribution</div>
+                <p class="program-text" data-i18n="prog-6-text">
+                    On festivals and special days, simple meals, sweets and clothes are distributed to
+                    families, children and senior citizens in need.
+                </p>
+                <div class="program-meta">
+                    <span class="program-chip" data-i18n="prog-6-meta-1">Donor supported</span>
+                    <span data-i18n="prog-6-meta-2">Round the year</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                © <span id="year"></span> <span data-i18n="logo-title">Swamy Vivekananda Seva Samsthe</span>. <span
+                    data-i18n="footer-rights">All rights reserved.</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" data-i18n="nav-about">About</a>
+                <a href="programs.html" data-i18n="nav-programs">Programs</a>
+                <a href="impact.html" data-i18n="nav-impact">Impact</a>
+                <a href="contact.html" data-i18n="nav-contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-credits" data-i18n="footer-credits">
+            Swamy Vivekananda Seva Samsthe is a registered non-profit trust dedicated to socio-economic upliftment and
+            character-building.
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
